@@ -1,94 +1,15 @@
-ol {
-    margin: 0;
-    padding: 0;
-}
-
-table td,table th {
-    padding: 0;
-}
-
-/*
-URL
-*/
-.c0 {
+a {
     line-height: 1;
     orphans: 2;
     widows: 2;
     padding-top: 0;
     font-size: 13px;
     color: #8899a6;
+    text-align: right;
 }
 
-.c7 {
-    orphans: 2;
-    widows: 2;
-}
-
-
-.c11 {
-    color: #666;
-    font-size: 12pt;
-}
-
-.c2 {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-.c9 {
-    background-color: #ff0;
-}
-
-.c1 {
-    page-break-after: avoid;
-}
-
-.c8 {
-    color: #f90;
-}
-
-.c6 {
-    color: red;
-}
-
-.c5 {
+.space {
     height: 11pt;
-}
-
-.c4 {
-    height: 20pt;
-}
-
-.title {
-    padding-top: 0;
-    color: #000;
-    font-size: 26pt;
-    padding-bottom: 3pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left;
-}
-
-.subtitle {
-    padding-top: 0;
-    color: #666;
-    font-size: 15pt;
-    padding-bottom: 16pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left;
-}
-
-li {
-    color: #000;
-    font-size: 11pt;
-    font-family: "Arial";
 }
 
 p {
@@ -96,6 +17,7 @@ p {
     color: #000;
     font-size: 11pt;
     font-family: "Arial";
+    padding-bottom: 3px;
 }
 
 h1 {
@@ -105,9 +27,6 @@ h1 {
     padding-bottom: 6pt;
     font-family: "Arial";
     line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
     text-align: left;
 }
 
@@ -118,23 +37,17 @@ h2 {
     padding-bottom: 6pt;
     font-family: "Arial";
     line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
     text-align: left;
 }
 
 h3 {
-    padding-top: 16pt;
     color: #434343;
-    font-size: 14pt;
-    padding-bottom: 0;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
+    font-size: 16px;
     text-align: left;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3px;
+    align-self: center;
 }
 
 h4 {
@@ -142,40 +55,11 @@ h4 {
     color: #666;
     font-size: 13pt;
     font-weight: 600;
-    padding-bottom: 4pt;
     font-family: "Arial";
     line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
     text-align: left;
-}
-
-h5 {
-    padding-top: 12pt;
-    color: #666;
-    font-size: 11pt;
-    padding-bottom: 4pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left;
-}
-
-h6 {
-    padding-top: 12pt;
-    color: #666;
-    font-size: 11pt;
-    padding-bottom: 4pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    font-style: italic;
-    orphans: 2;
-    widows: 2;
-    text-align: left;
+    margin: 0;
+    padding-bottom: 2px;
 }
 
 
@@ -188,18 +72,24 @@ h6 {
     padding: 20px 10px;
     margin-bottom: 35px;
     width: 700px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h3 {
-    margin: 0;
-    padding: 0;
+    flex-basis: 20%;
 }
 
-h4 {
-    margin: 0;
-    padding-bottom: 2px;
+.tweet p, .tweet h4 {
+    flex: 0 1 100%;
 }
 
-p {
-    padding-bottom: 3px;
+.url {
+    text-align: right;
 }
+/*url with date*/
+h3+.url {
+    flex-basis: 80% !important;
+}
+
+
