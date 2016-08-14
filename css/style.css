@@ -7,11 +7,16 @@ table td,table th {
     padding: 0;
 }
 
-
+/*
+URL
+*/
 .c0 {
     line-height: 1;
     orphans: 2;
     widows: 2;
+    padding-top: 0;
+    font-size: 13px;
+    color: #8899a6;
 }
 
 .c7 {
@@ -19,10 +24,6 @@ table td,table th {
     widows: 2;
 }
 
-.c3 {
-    color: #15c;
-    text-decoration: underline;
-}
 
 .c11 {
     color: #666;
@@ -127,7 +128,7 @@ h3 {
     padding-top: 16pt;
     color: #434343;
     font-size: 14pt;
-    padding-bottom: 4pt;
+    padding-bottom: 0;
     font-family: "Arial";
     line-height: 1.15;
     page-break-after: avoid;
@@ -184,9 +185,14 @@ h6 {
 
 .tweet {
     background-color: #d8eef8;
-    padding-left: 8px;
-    padding-bottom: 5px;
+    padding: 20px 10px;
+    margin-bottom: 35px;
     width: 700px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
 }
 
 h4 {
@@ -197,4 +203,3 @@ h4 {
 p {
     padding-bottom: 3px;
 }
-
