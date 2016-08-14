@@ -3,5 +3,5 @@
 angular.module('app', []).controller('MainController', ['$scope', function($scope) {
     $scope.content = {'title': 'foo'};
 
-    $scope.month = 1510;
+    $scope.month = 0;
 }]);

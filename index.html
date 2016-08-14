@@ -15,8 +15,10 @@
     <title>#ShukaInstructionManual</title>
 </head>
 <body ng-app="app" ng-controller="MainController">
-    <div class="col-md-1">
+<div class="row">
+    <div class="months col-md-1">
         <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" ng-class="{'active': month == 0}" ng-click="month = 0"><a>Introduction</a></li>
             <li role="presentation" ng-class="{'active': month == 1510}" ng-click="month = 1510"><a>October 2015</a></li>
             <li role="presentation" ng-class="{'active': month == 1511}" ng-click="month = 1511"><a>November 2015</a></li>
             <li role="presentation" ng-class="{'active': month == 1512}" ng-click="month = 1512"><a>December 2015</a></li>
@@ -30,7 +32,21 @@
         </ul>
     </div>
 
-    <div class="tweets col-md-8">
+    <div class="tweets col-md-11" >
+        <div class="tweet"ng-show="month == 0">
+            <h2>Ohayousoro!</h2>
+            <p>Saito Shuka, otherwise known as Shukashuu, is the voice behind Watanabe You, from Love Live! Sunshine!!</p>
+            <p>#朱夏取扱説明書 (#ShukaInstructionManual) is the Twitter tag that Shukashuu uses to answer questions
+                that her fans have sent in. You can tweet her your questions using the hashtag #朱夏質問投書箱 (#ShukaAskbox).</p>
+            <p>This website is a translated compilation of all the questions and answers asked since she started in October 2015.<br>
+                We hope this website gives you some insight into Shuka's life!</p>
+            <h2>Credits:</h2>
+            <p><a href="https://twitter.com/ll_wikia">@LL_Wikia</a> - Translation<br>
+            <a href="http://saitou-shuka.tumblr.com/">Shukamod</a> - Translation<br>
+            <a href="https://twitter.com/Eternith">@Eternith</a> - Website</p>
+
+        </div>
+
         <div class="month" ng-show="month == 1510">
 
             <h2><span>October 2015</span></h2>
@@ -2072,5 +2088,6 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>

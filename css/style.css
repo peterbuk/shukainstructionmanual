@@ -71,9 +71,14 @@ h4 {
     background-color: #d8eef8;
     padding: 20px 10px;
     margin-bottom: 35px;
-    width: 700px;
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+    .tweet {
+        width: 700px;
+    }
 }
 
 h3 {
@@ -91,5 +96,10 @@ h3 {
 h3+.url {
     flex-basis: 80% !important;
 }
+
+li a {
+    text-align: left;
+}
+
 
 
