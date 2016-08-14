@@ -15,27 +15,27 @@ a {
 p {
     margin: 0;
     color: #000;
-    font-size: 11pt;
-    font-family: "Arial";
+    font-size: 10pt;
+    font-weight: 500;
     padding-bottom: 3px;
 }
 
 h1 {
-    padding-top: 20pt;
+    padding-left: 20pt;
     color: #000;
-    font-size: 20pt;
+    font-size: 40pt;
     padding-bottom: 6pt;
-    font-family: "Arial";
+    font-family: 'Carter One', cursive;
     line-height: 1.15;
     text-align: left;
 }
 
 h2 {
-    padding-top: 18pt;
     color: #000;
     font-size: 16pt;
     padding-bottom: 6pt;
-    font-family: "Arial";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     line-height: 1.15;
     text-align: left;
 }
@@ -44,6 +44,7 @@ h3 {
     color: #434343;
     font-size: 16px;
     text-align: left;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     padding-bottom: 3px;
@@ -53,24 +54,31 @@ h3 {
 h4 {
     padding-top: 14pt;
     color: #666;
-    font-size: 13pt;
+    font-size: 11pt;
     font-weight: 600;
-    font-family: "Arial";
     line-height: 1.15;
     text-align: left;
     margin: 0;
     padding-bottom: 2px;
 }
 
+h4, p {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.url {
+    font-family: "Oxygen";
+}
+
 
 /************************
-******   CUSTOM  ********
+*****   Alignment  ******
 ************************/
 
 .tweet {
     background-color: #d8eef8;
     padding: 20px 10px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -101,5 +109,15 @@ li a {
     text-align: left;
 }
 
+.noselect {
+    cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
 
 
