@@ -165,6 +165,7 @@ h3+.url {
 
 .nav>li>a {
     padding: 10px;
+    cursor: pointer;
 }
 
 
