@@ -132,8 +132,11 @@ h4, p, a {
     li a {
         text-align: left;
     }
+}
+
+@media (max-width: 740px) {
     .affix {
-        /*position: static;*/
+        position: static;
     }
 }
 
