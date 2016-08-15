@@ -41,21 +41,37 @@
 </div-->
 
 <div class="row">
+
     <div class="months col-md-1 col-md-offset-1">
-        <ul data-spy1="affix" id="sidebar" class="nav nav-pills nav-stacked">
-            <li role="presentation" ng-class="{'active': month == 0}" ng-click="month = 0; goTop();" target="#"><a>Introduction</a></li>
-            <li role="presentation" ng-class="{'active': month == 1510}" ng-click="month = 1510; goTop();" target="#"><a>October 2015</a></li>
-            <li role="presentation" ng-class="{'active': month == 1511}" ng-click="month = 1511; goTop();" target="#"><a>November 2015</a></li>
-            <li role="presentation" ng-class="{'active': month == 1512}" ng-click="month = 1512; goTop();"><a>December 2015</a></li>
-            <li role="presentation" ng-class="{'active': month == 1601}" ng-click="month = 1601; goTop();"><a>January 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1602}" ng-click="month = 1602; goTop();"><a>February 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1603}" ng-click="month = 1603; goTop();"><a>March 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1604}" ng-click="month = 1604; goTop();"><a>April 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1605}" ng-click="month = 1605; goTop();"><a>May 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1606}" ng-click="month = 1606; goTop();"><a>June 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1607}" ng-click="month = 1607; goTop();"><a>July 2016</a></li>
-        </ul>
+        <div class="sidebar-nav">
+        <div  data-spy="affix" class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse sidebar-navbar-collapse collapse" style="height:1px;">
+                <ul id="sidebar" class="nav nav-pills nav-stacked">
+                    <li role="presentation" ng-class="{'active': month == 0}" ng-click="month = 0; goTop();" target="#"><a>Introduction</a></li>
+                    <li role="presentation" ng-class="{'active': month == 1510}" ng-click="month = 1510; goTop();" target="#"><a>October 2015</a></li>
+                    <li role="presentation" ng-class="{'active': month == 1511}" ng-click="month = 1511; goTop();" target="#"><a>November 2015</a></li>
+                    <li role="presentation" ng-class="{'active': month == 1512}" ng-click="month = 1512; goTop();"><a>December 2015</a></li>
+                    <li role="presentation" ng-class="{'active': month == 1601}" ng-click="month = 1601; goTop();"><a>January 2016</a></li>
+                    <li role="presentation" ng-class="{'active': month == 1602}" ng-click="month = 1602; goTop();"><a>February 2016</a></li>
+                    <li role="presentation" ng-class="{'active': month == 1603}" ng-click="month = 1603; goTop();"><a>March 2016</a></li>
+                    <li role="presentation" ng-class="{'active': month == 1604}" ng-click="month = 1604; goTop();"><a>April 2016</a></li>
+                    <li role="presentation" ng-class="{'active': month == 1605}" ng-click="month = 1605; goTop();"><a>May 2016</a></li>
+                    <li role="presentation" ng-class="{'active': month == 1606}" ng-click="month = 1606; goTop();"><a>June 2016</a></li>
+                    <li role="presentation" ng-class="{'active': month == 1607}" ng-click="month = 1607; goTop();"><a>July 2016</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
     </div>
+
 
     <div class="tweets col-md-9" >
         <div class="intro"ng-show="month == 0">
