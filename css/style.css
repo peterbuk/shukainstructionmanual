@@ -9,7 +9,6 @@ body {
         background-attachment: fixed;
     }
 }  @media (min-width: 1362px) {
-
     body {
         background-position: 100% 100%;
     }
