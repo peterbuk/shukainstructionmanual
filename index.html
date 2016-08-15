@@ -5,8 +5,10 @@
     <title>#ShukaInstructionManual</title>
     <!-- Bootstrap-->
     <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet"><!-- Latest compiled and minified JavaScript -->
-    <script crossorigin="anonymous" integrity="sha384-TspaceIQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Carter+One|Josefin+Sans|Patrick+Hand|Montserrat|Oxygen" rel="stylesheet">
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Josefin+Sans|Patrick+Hand|Montserrat|Oxygen|Noto+Sans" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/twemoji-awesome.css" rel="stylesheet">
@@ -28,40 +30,48 @@
 <body class="" ng-app="app" ng-controller="MainController">
 <div class="row">
     <header class="col-md-7 col-md-offset-1">
-        <h1 class="noselect">#Shuka Instruction Manual </h1>
+        <h1 class="noselect">#Shuka Instruction Manual</h1>
+        <a id="#top"></a>
+    </header>
+</div>
+<div class="row">
+    <header class="col-md-1 col-md-offset-5">
+        <!--h5 class="noselect">#朱夏取扱説明書</h5-->
+        <img src="images/subtitle.png">
     </header>
 </div>
 
 <div class="row">
     <div class="months col-md-1 col-md-offset-1">
-        <ul class="nav nav-pills nav-stacked">
-            <li role="presentation" ng-class="{'active': month == 0}" ng-click="month = 0"><a>Introduction</a></li>
-            <li role="presentation" ng-class="{'active': month == 1510}" ng-click="month = 1510"><a>October 2015</a></li>
-            <li role="presentation" ng-class="{'active': month == 1511}" ng-click="month = 1511"><a>November 2015</a></li>
-            <li role="presentation" ng-class="{'active': month == 1512}" ng-click="month = 1512"><a>December 2015</a></li>
-            <li role="presentation" ng-class="{'active': month == 1601}" ng-click="month = 1601"><a>January 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1602}" ng-click="month = 1602"><a>February 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1603}" ng-click="month = 1603"><a>March 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1604}" ng-click="month = 1604"><a>April 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1605}" ng-click="month = 1605"><a>May 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1606}" ng-click="month = 1606"><a>June 2016</a></li>
-            <li role="presentation" ng-class="{'active': month == 1607}" ng-click="month = 1607"><a>July 2016</a></li>
+        <ul data-spy="affix" id="sidebar" class="nav nav-pills nav-stacked">
+            <li role="presentation" ng-class="{'active': month == 0}" ng-click="month = 0; goTop();" target="#"><a>Introduction</a></li>
+            <li role="presentation" ng-class="{'active': month == 1510}" ng-click="month = 1510; goTop();" target="#"><a>October 2015</a></li>
+            <li role="presentation" ng-class="{'active': month == 1511}" ng-click="month = 1511; goTop();" target="#"><a>November 2015</a></li>
+            <li role="presentation" ng-class="{'active': month == 1512}" ng-click="month = 1512; goTop();"><a>December 2015</a></li>
+            <li role="presentation" ng-class="{'active': month == 1601}" ng-click="month = 1601; goTop();"><a>January 2016</a></li>
+            <li role="presentation" ng-class="{'active': month == 1602}" ng-click="month = 1602; goTop();"><a>February 2016</a></li>
+            <li role="presentation" ng-class="{'active': month == 1603}" ng-click="month = 1603; goTop();"><a>March 2016</a></li>
+            <li role="presentation" ng-class="{'active': month == 1604}" ng-click="month = 1604; goTop();"><a>April 2016</a></li>
+            <li role="presentation" ng-class="{'active': month == 1605}" ng-click="month = 1605; goTop();"><a>May 2016</a></li>
+            <li role="presentation" ng-class="{'active': month == 1606}" ng-click="month = 1606; goTop();"><a>June 2016</a></li>
+            <li role="presentation" ng-class="{'active': month == 1607}" ng-click="month = 1607; goTop();"><a>July 2016</a></li>
         </ul>
     </div>
 
     <div class="tweets col-md-9" >
-        <div class="tweet"ng-show="month == 0">
+        <div class="intro"ng-show="month == 0">
             <h2>Ohayousoro!</h2>
-            <p>Saito Shuka, otherwise known as Shukashuu, is the voice behind Watanabe You, from Love Live! Sunshine!!</p>
-            <p>#朱夏取扱説明書 (#ShukaInstructionManual) is the Twitter tag that Shukashuu uses to answer questions
-                that her fans have sent in. You can tweet her your questions using the same hashtag!</p>
-            <p>This website is a translated compilation of all the questions and answers asked since she started in October 2015.<br>
-                We hope this website gives you some insight into Shuka's life!</p>
-            <h2>Credits:</h2>
-            <p><a href="https://twitter.com/ll_wikia">@LL_Wikia</a> - Translation<br>
-            <a href="http://saitou-shuka.tumblr.com/">Shukamod</a> - Translation<br>
-            <a href="https://twitter.com/Eternith">@Eternith</a> - Website</p>
-
+            <div class="tweet">
+                <p>Saito Shuka, otherwise known as Shukashuu, is the voice behind Watanabe You, from Love Live! Sunshine!!</p>
+                <p>#朱夏取扱説明書 (#ShukaInstructionManual) is the Twitter tag that Shukashuu uses to answer questions
+                    that her fans have sent in. You can tweet her your questions using the same hashtag!</p>
+                <p>This website is a translated compilation of all the questions and answers asked since she started in October 2015.<br>
+                    We hope this website gives you some insight into Shuka's life!</p>
+                <h4>Credits:</h4>
+                <p><a href="https://twitter.com/ll_wikia">@LL_Wikia</a> - Translation<br>
+                <a href="http://saitou-shuka.tumblr.com/">Shukamod</a> - Translation<br>
+                <a href="https://twitter.com/Eternith">@Eternith</a> - Website</p>
+            </div>
         </div>
 
         <div class="month" ng-show="month == 1510">
