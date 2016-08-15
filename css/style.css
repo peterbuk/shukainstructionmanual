@@ -133,7 +133,7 @@ h4, p, a {
         text-align: left;
     }
     .affix {
-        position: static;
+        /*position: static;*/
     }
 }
 
