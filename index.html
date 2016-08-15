@@ -40,6 +40,7 @@
         <div class="sidebar-nav">
         <div  data-spy="affix" class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
+                <span>i am a header</span>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -48,7 +49,7 @@
                 </button>
             </div>
             <div class="navbar-collapse sidebar-navbar-collapse collapse" style="height:1px;">
-                <ul id="sidebar" class="nav nav-pills nav-stacked">
+                <ul id="sidebar" class="nav navbar-nav nav-pills nav-stacked">
                     <li role="presentation" ng-class="{'active': month == 0}" ng-click="month = 0; goTop();" target="#"><a>Introduction</a></li>
                     <li role="presentation" ng-class="{'active': month == 1510}" ng-click="month = 1510; goTop();" target="#"><a>October 2015</a></li>
                     <li role="presentation" ng-class="{'active': month == 1511}" ng-click="month = 1511; goTop();" target="#"><a>November 2015</a></li>
